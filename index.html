@@ -191,7 +191,7 @@
             reader.onload = async function () {
                 //console.log(reader.result);//base64encoded string
                 try {
-                    const response = await fetch("https://memories1212.herokuapp.com/posts", {
+                    const response = await fetch("https://esd-19-compa51-23.herokuapp.com/posts", {
                         method: "POST",
                         mode: "cors",
                         body: new URLSearchParams({
@@ -217,7 +217,7 @@
 
             const id = window.event.target.id;
             try {
-                const response = await fetch(`https://memories1212.herokuapp.com/posts/${id}`, {
+                const response = await fetch(`https://esd-19-compa51-23.herokuapp.com/posts/${id}`, {
                     method: "DELETE",
                     mode: "cors",
                 });
